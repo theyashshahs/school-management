@@ -8,6 +8,6 @@ class Student(models.Model):
     profilepic = models.ImageField(upload_to='profilepics/student/', blank=True)
 
     def __str__(self):
-        return str(self.roll_number) + ' - ' + self.first_name + ' ' + self.last_name
+        return self.roll_number + ' - ' + self.first_name + ' ' + self.last_name
         
 

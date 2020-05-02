@@ -8,3 +8,4 @@ class Teacher(models.Model):
 
     def __str__(self):
         return str(self.teacher_id) + ' ' + self.first_name + ' ' + self.last_name
+
