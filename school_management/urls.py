@@ -4,13 +4,16 @@ from django.conf import settings
 from django.conf.urls.static import static
 from django.contrib.staticfiles.urls import staticfiles_urlpatterns
 
+from . import views
+
 app_name = 'home'
 
 urlpatterns = [
+    path('', views.home, name='landing'),
     path('admin/', admin.site.urls),
-    path('student/', include('student.urls', namespace='student')),
-    path('teacher/', include('teacher.urls', namespace='teacher')),
-    path('administration/', include('administration.urls', namespace='administration')),
+    # path('student/', include('student.urls', namespace='student')),
+    # path('teacher/', include('teacher.urls', namespace='teacher')),
+    # path('administration/', include('administration.urls', namespace='administration')),
 ]
 
 urlpatterns += staticfiles_urlpatterns()

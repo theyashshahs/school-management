@@ -6,13 +6,15 @@
         <meta charset="utf-8" />
         <title>{% block title %} School Management System {% endblock %}</title>
 
-        <link rel="shortcut icon" type="image/png" href="#"/>
+        <link rel="shortcut icon" type="image/png" href="{% static 'favicon.ico' %}"/>
         <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}"/>
     </head>
 
     <body>
-        <div class="navbar">
             <ul>
+                <li>
+                    <a href="#">School Management System</a>
+                </li>
                 <li>
                     <a href="#">Dashboard</a>
                 </li>
@@ -23,7 +25,6 @@
                     <a href="#">Assignments</a>
                 </li>
             </ul>
-        </div>
         {% block body %} {% endblock %}
     </body>
 </html>
