@@ -1,7 +1,7 @@
 from django.db import models
 
 class Teacher(models.Model):
-    teacher_id = models.IntegerField(primary_key=True, max_length=10)
+    teacher_id = models.IntegerField(primary_key=True)
     first_name = models.CharField(max_length=100)
     last_name = models.CharField(max_length=100)
     profilepic = models.ImageField(upload_to='profilepics/teacher/', blank=True)

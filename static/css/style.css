@@ -25,3 +25,19 @@ body {
 .topnav a.active {
     background-color: #4F455C;
 }
+
+.header {
+    overflow: hidden;
+    background-color: #070413;
+    text-align: center;
+    font-weight: 800;
+    font-size: 50px;
+    color: white;
+    height: 100px;
+    margin-bottom: 30px;
+}
+
+div.header > span {
+    display: block;
+    padding: 13px 16px;
+}
