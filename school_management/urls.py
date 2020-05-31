@@ -11,7 +11,7 @@ app_name = 'home'
 urlpatterns = [
     path('', views.home, name='landing'),
     path('admin/', admin.site.urls, name='admin'),
-    path('student/', include('student.urls', namespace='student')),
+    path('students/', include('student.urls', namespace='student')),
     # path('teacher/', include('teacher.urls', namespace='teacher')),
     # path('administration/', include('administration.urls', namespace='administration')),
 ]
