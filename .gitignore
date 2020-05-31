@@ -246,3 +246,5 @@ $RECYCLE.BIN/
 db.sqlite3
 
 .env
+
+staticfiles/
