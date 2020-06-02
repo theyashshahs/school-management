@@ -1,6 +1,10 @@
-from django.urls import path, include
-from django.conf import settings
+from rest_framework.routers import SimpleRouter
+from . import views
 
 app_name = 'teacher'
 
-urlpatterns = []
+router = SimpleRouter()
+router.register('teacher', views.TeacherViewSet, basename='api-teacher')
+
+urlpatterns = router.urls
+

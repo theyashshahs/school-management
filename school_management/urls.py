@@ -11,7 +11,7 @@ urlpatterns = [
     path('', views.home, name='landing'),
     path('admin/', admin.site.urls, name='admin'),
     path('students/', include('student.urls', namespace='student')),
-    # path('teacher/', include('teacher.urls', namespace='teacher')),
+    path('teachers/', include('teacher.urls', namespace='teacher')),
     # path('administration/', include('administration.urls', namespace='administration')),
 ]
 
