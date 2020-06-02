@@ -12,7 +12,7 @@ urlpatterns = [
     path('admin/', admin.site.urls, name='admin'),
     path('students/', include('student.urls', namespace='student')),
     path('teachers/', include('teacher.urls', namespace='teacher')),
-    # path('administration/', include('administration.urls', namespace='administration')),
+    path('administration/', include('administration.urls', namespace='administration')),
 ]
 
 urlpatterns += staticfiles_urlpatterns()
