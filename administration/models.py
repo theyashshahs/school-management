@@ -1,5 +1,6 @@
 from django.db import models
 from teacher.models import Teacher
+from student.models import Student
 
 class Course(models.Model):
     course_id = models.CharField(primary_key=True, max_length=10)
@@ -9,3 +10,12 @@ class Course(models.Model):
     def __str__(self):
         return str(self.course_id)
 
+
+class Fees(models.Model):
+    student = models.ForeignKey(Student, on_delete=models.CASCADE)
+    fees = models.IntegerField()
+    dateofpayment = models.DateField()
+    paymentreceipt = models.FileField(upload_to="receipt/", blank=True)
+
+    def __str__(self):
+        return self.student
