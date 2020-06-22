@@ -57,7 +57,6 @@ MIDDLEWARE = [
 ]
 
 ROOT_URLCONF = 'school_management.urls'
-CORS_ORIGIN_ALLOW_ALL = True
 
 TEMPLATES = [
     {
