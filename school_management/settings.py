@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'administration.apps.AdministrationConfig',
     'student.apps.StudentConfig',
     'teacher.apps.TeacherConfig',
+    'guardian.apps.GuardianConfig',
     'rest_framework',
     'corsheaders',
 ]
