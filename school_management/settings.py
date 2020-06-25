@@ -45,6 +45,7 @@ INSTALLED_APPS = [
     'auth.apps.AuthConfig',
     'rest_framework',
     'corsheaders',
+    'django_rename_app',
 ]
 
 MIDDLEWARE = [
