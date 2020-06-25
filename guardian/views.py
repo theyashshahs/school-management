@@ -1,3 +1,9 @@
 from django.shortcuts import render
+from rest_framework.viewsets import ModelViewSet
+from guardian.models import Guardian
+from guardian.serializers import GuardianSerializer
 
-# Create your views here.
+class GuardianViewSet(ModelViewSet):
+    serializer_class = GuardianSerializer
+    queryset = Guardian.objects.all()
+    
