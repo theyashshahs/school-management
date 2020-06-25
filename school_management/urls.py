@@ -13,7 +13,8 @@ urlpatterns = [
     path('students/', include('student.urls', namespace='student')),
     path('teachers/', include('teacher.urls', namespace='teacher')),
     path('administration/', include('administration.urls', namespace='administration')),
-    path('guardian/', include('guardian.urls', namespace='guardian'))
+    path('guardian/', include('guardian.urls', namespace='guardian')),
+    path('auth/', include('auth.urls', namespace='auth')),
 ]
 
 urlpatterns += staticfiles_urlpatterns()
