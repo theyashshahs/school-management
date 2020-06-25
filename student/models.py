@@ -12,7 +12,7 @@ class Student(models.Model):
         return self.roll_number + ' - ' + self.first_name + ' ' + self.last_name
 
 
-class AssignmentAnswer(models.Model):
+class Answer(models.Model):
     assignment = models.ForeignKey(Assignment, on_delete=models.CASCADE)
     answer = models.URLField(blank=True)
 
