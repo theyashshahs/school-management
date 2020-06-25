@@ -1,4 +1,5 @@
 from django.db import models
+from teacher.models import Assignment
 
 class Student(models.Model):
     roll_number = models.CharField(primary_key=True, max_length=10)
@@ -9,3 +10,11 @@ class Student(models.Model):
 
     def __str__(self):
         return self.roll_number + ' - ' + self.first_name + ' ' + self.last_name
+
+
+class AssignmentAnswer(models.Model):
+    assignment = models.ForeignKey(Assignment, on_delete=models.CASCADE)
+    answer = models.URLField(blank=True)
+
+    def __str__(self):
+        return str(self.assignment)

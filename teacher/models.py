@@ -16,3 +16,5 @@ class Assignment(models.Model):
     due_date = models.DateField(default=datetime.date.today)
     upload = models.URLField(blank=False)
 
+    def __str__(self):
+        return str(self.heading)
