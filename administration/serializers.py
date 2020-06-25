@@ -1,14 +1,14 @@
 from rest_framework import serializers
-from administration.models import Course, Fees
+from administration.models import Class, Fee
 
-class CourseSerializer(serializers.ModelSerializer):
+class ClassSerializer(serializers.ModelSerializer):
 
     class Meta:
-        model = Course
+        model = Class
         fields = '__all__'
 
-class FessSerializer(serializers.ModelSerializer):
+class FeeSerializer(serializers.ModelSerializer):
 
     class Meta:
-        model = Fees
+        model = Fee
         fields = '__all__'
