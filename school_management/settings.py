@@ -42,10 +42,9 @@ INSTALLED_APPS = [
     'student.apps.StudentConfig',
     'teacher.apps.TeacherConfig',
     'guardian.apps.GuardianConfig',
-    'auth.apps.AuthConfig',
+    'authentication.apps.AuthenticationConfig',
     'rest_framework',
     'corsheaders',
-    'django_rename_app',
 ]
 
 MIDDLEWARE = [
