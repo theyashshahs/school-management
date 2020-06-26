@@ -15,6 +15,7 @@ urlpatterns = [
     path('administration/', include('administration.urls', namespace='administration')),
     path('guardian/', include('guardian.urls', namespace='guardian')),
     path('auth/', include('authentication.urls', namespace='auth')),
+    path('fees/', include('fees.urls', namespace='fees')),
 ]
 
 urlpatterns += staticfiles_urlpatterns()

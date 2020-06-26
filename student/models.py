@@ -1,6 +1,6 @@
 from django.db import models
 from teacher.models import Assignment
-# from administration.models import Class
+from administration.models import Class
 
 class Student(models.Model):
     roll_number = models.CharField(primary_key=True, max_length=10)
@@ -9,7 +9,7 @@ class Student(models.Model):
     dob = models.DateField()
     profilepic = models.URLField(blank=True)
     attendance = models.DecimalField(max_digits=5, decimal_places=2)
-    # class_name = models.ForeignKey(Class, on_delete=models.CASCADE)
+    class_name = models.ForeignKey(Class, default=1201, on_delete=models.CASCADE)
     grade = models.DecimalField(max_digits=5, decimal_places=2)
 
     def __str__(self):

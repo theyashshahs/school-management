@@ -7,6 +7,5 @@ app_name = 'administration'
 
 router = SimpleRouter()
 router.register('class', views.ClassViewSet, basename='api-course')
-router.register('fees', views.FeeViewSet, basename='api-fees')
 
 urlpatterns = router.urls
