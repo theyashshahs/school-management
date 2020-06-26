@@ -1,5 +1,4 @@
 from django.db import models
-# from administration.models import Class
 import datetime
 
 class Teacher(models.Model):
@@ -7,7 +6,6 @@ class Teacher(models.Model):
     first_name = models.CharField(max_length=100)
     last_name = models.CharField(max_length=100)
     profilepic = models.URLField(blank=True)
-    # class_id = Class._meta.get_field('class_id')
 
     def __str__(self):
         return str(self.teacher_id) + ' ' + self.first_name + ' ' + self.last_name

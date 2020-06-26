@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     'teacher.apps.TeacherConfig',
     'guardian.apps.GuardianConfig',
     'authentication.apps.AuthenticationConfig',
+    'fees.apps.FeesConfig',
     'rest_framework',
     'corsheaders',
 ]
