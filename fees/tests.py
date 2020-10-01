@@ -14,9 +14,9 @@ class FeeTests(TestCase):
     def setUp(self):
         self.factory = APIRequestFactory()
 
-        self.fee = Fee.objects.create(
-            student=1, fees=100000, dateofpayment=datetime.date.today
-        )
+        self.fee = Fee.objects.create(student=1,
+                                      fees=100000,
+                                      dateofpayment=datetime.date.today)
 
     def test_get_all_fees(self):
         response = self.client.get("/fees/")
