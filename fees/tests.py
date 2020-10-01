@@ -12,8 +12,9 @@ class FeeTests(TestCase):
         self.factory = APIRequestFactory()
 
         self.fee = Fee.objects.create(
-            student=1, fees=100000, dateofpayment=datetime.date.today)
+            student=1, fees=100000, dateofpayment=datetime.date.today
+        )
 
     def test_get_all_fees(self):
-        response = self.client.get('/fees/')
+        response = self.client.get("/fees/")
         self.assertEqual(response.status_code, status.HTTP_200_OK)
