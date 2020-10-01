@@ -10,8 +10,9 @@ from teacher.models import Teacher
 class TeacherTests(TestCase):
     def setUp(self):
         self.teacher = Teacher.objects.create(
-            teacher_id=1, first_name='optimus', last_name='prime')
+            teacher_id=1, first_name="optimus", last_name="prime"
+        )
 
     def test_get_all_guardian(self):
-        response = self.client.get('/teachers/teacher/')
+        response = self.client.get("/teachers/teacher/")
         self.assertEqual(response.status_code, status.HTTP_200_OK)

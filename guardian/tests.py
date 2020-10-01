@@ -10,8 +10,8 @@ from student.models import Student
 
 class GuardianTests(TestCase):
     def setUp(self):
-        self.guardian = Guardian.objects.create(student=1, name='optimus')
+        self.guardian = Guardian.objects.create(student=1, name="optimus")
 
     def test_get_all_guardian(self):
-        response = self.client.get('/guardian/')
+        response = self.client.get("/guardian/")
         self.assertEqual(response.status_code, status.HTTP_200_OK)
