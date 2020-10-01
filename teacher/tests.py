@@ -10,9 +10,9 @@ from teacher.models import Teacher
 
 class TeacherTests(TestCase):
     def setUp(self):
-        self.teacher = Teacher.objects.create(
-            teacher_id=1, first_name="optimus", last_name="prime"
-        )
+        self.teacher = Teacher.objects.create(teacher_id=1,
+                                              first_name="optimus",
+                                              last_name="prime")
 
     def test_get_all_guardian(self):
         response = self.client.get("/teachers/teacher/")
