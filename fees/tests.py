@@ -3,7 +3,8 @@ import datetime
 from django.http import response
 from django.test import TestCase
 from rest_framework import status
-from rest_framework.test import APIRequestFactory, force_authenticate
+from rest_framework.test import APIRequestFactory
+from rest_framework.test import force_authenticate
 
 from fees.models import Fee
 from student.models import Student
