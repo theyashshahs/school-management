@@ -1,6 +1,8 @@
-from django.db import models
-from student.models import Student
 import datetime
+
+from django.db import models
+
+from student.models import Student
 
 
 class Fee(models.Model):

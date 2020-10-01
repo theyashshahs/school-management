@@ -1,10 +1,12 @@
+import datetime
+
 from django.http import response
-from student.models import Student
 from django.test import TestCase
 from rest_framework import status
 from rest_framework.test import APIRequestFactory, force_authenticate
-import datetime
+
 from fees.models import Fee
+from student.models import Student
 
 
 class FeeTests(TestCase):
