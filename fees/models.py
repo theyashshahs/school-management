@@ -1,6 +1,8 @@
-from django.db import models
-from student.models import Student
 import datetime
+
+from django.db import models
+
+from student.models import Student
 
 
 class Fee(models.Model):
@@ -10,4 +12,4 @@ class Fee(models.Model):
     paymentreceipt = models.URLField(blank=True)
 
     def __str__(self):
-        return f'{self.student}'
+        return f"{self.student}"
